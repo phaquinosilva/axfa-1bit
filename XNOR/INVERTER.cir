@@ -1,9 +1,5 @@
-*INVERTER
-
 *circuit - INVERTER
 .subckt Inv in out vdd gnd
 Mp vdd in out in pmos_nvt L=len nfin=n
 Mn out in gnd in nmos_nvt L=len nfin=n
 .ends
-
-*transistor

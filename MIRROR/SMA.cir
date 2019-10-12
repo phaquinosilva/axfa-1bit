@@ -1,5 +1,4 @@
-*SMA
-
+*circuit - SMA
 .subckt SMA a b cin sum cout vdd gnd
 *DUT
     *PMOS

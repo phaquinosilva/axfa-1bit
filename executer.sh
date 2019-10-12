@@ -1,11 +1,11 @@
 #! /bin/bash
 echo
-echo "=====Simulacao====="
+echo "Simulation executer"
 for i in $(find . -name "*meas*.cir")
 do
-echo "Simulando: $i"
+echo "Simulating: $i"
 hspice $i
 done
 
-echo "=====Fim da Simulacao====="
+echo "Done."
 echo

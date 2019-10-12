@@ -1,6 +1,6 @@
-*APROX MIRROR 1
+*AMA1 validation
 
-*Pred. model
+*model
 .include 7nm_FF.pm
 
 *param
@@ -9,11 +9,11 @@
 .param n = 3
 .option post = 2
 
-*Fontes
+*sources
 Vvdut vdut gnd vdd
 Vvdd1 vdd1 gnd vdd
 Vvdd2 vdd2 gnd vdd
-*Fontes validação lógica
+*sources validation
 Va a_in gnd pulse(0 vdd 4.2n 0.1n 0.1n 4.2n 8.6n)
 Vb b_in gnd pulse(0 vdd 2.2n 0.1n 0.1n 2.2n 4.2n)
 Vcin c_in gnd pulse(0 vdd 1n 0.1n 0.1n 1n 2.2n)

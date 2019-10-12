@@ -1,4 +1,4 @@
-0 '*AXA2 test SUM
+*AXA2 test SUM
 
 *model
 .include 7nm_FF.cir

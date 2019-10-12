@@ -1,4 +1,4 @@
-*EXA
+*circuit - EXA
 .subckt EXA a b cin sum cout vdd gnd
 *DUT
     *PMOS

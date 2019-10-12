@@ -1,5 +1,4 @@
-*AXA3
-
+*circuit - AXA3
 .subckt AXA3 a b cin sum cout vdd gnd
 *DUT
     *PMOS

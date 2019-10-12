@@ -1,6 +1,6 @@
-*MIRROR ADDER - testes SUM
+*MIRROR test SUM
 
-*Pred. model
+*model
 .include 7nm_FF.pm
 
 *param

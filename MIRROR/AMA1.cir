@@ -1,5 +1,4 @@
-*AMA1
-
+*circuit AMA1
 .subckt AMA1 a b cin sum cout vdd gnd
 *DUT
     *PMOS

@@ -1,5 +1,4 @@
-*MIRROR
-
+*circuit - MIRROR
 .subckt MIR a b cin sum cout vdd gnd
 *DUT
     *PMOS

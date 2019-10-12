@@ -1,4 +1,4 @@
-*MIRROR ADDER
+*MIRROR validation
 
 *model
 .include 7nm_FF.pm
