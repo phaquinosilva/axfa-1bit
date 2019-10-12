@@ -1,0 +1,49 @@
+*AXA2 validation
+
+*model
+.include 7nm_FF.cir
+
+*param
+.param vdd = 0.7V
+.param len = 7nm
+.param n = 3
+.option post = 2
+
+
+*sources
+Vvdut vdut gnd vdd
+Vvdd1 vdd1 gnd vdd
+Vvdd2 vdd2 gnd vdd
+*Vboost boost gnd 0.9V
+*validation sources
+Va a_in gnd pulse(0 vdd 4.2n 0.1n 0.1n 4.2n 8.6n)
+Vb b_in gnd pulse(0 vdd 2.2n 0.1n 0.1n 2.2n 4.2n)
+Vcin c_in gnd pulse(0 vdd 1n 0.1n 0.1n 1n 2.2n)
+
+.include INVERTER.cir
+.include AXA2.cir
+
+*IN
+Xinv1 a_in a_in1 vdd1 gnd Inv
+*Xinv2 a_in1 a boost gnd Inv
+Xinv2 a_in1 a vdd1 gnd Inv
+
+Xinv3 b_in b_in1 vdd1 gnd Inv
+Xinv4 b_in1 b vdd1 gnd Inv
+
+Xinv5 c_in c_in1 vdd1 gnd Inv
+Xinv6 c_in1 cin vdd1 gnd Inv
+
+***************DUT******************
+XDUT a b cin sum cout vdut gnd AXA2
+
+*OUT
+Xinv7 sum  sum_1 vdd2 gnd Inv M=2
+Xinv8 sum_1  sum_2 vdd2 gnd Inv M=2
+Xinv9 cout cout_1 vdd2 gnd Inv M=2
+Xinv10 cout_1 cout_2 vdd2 gnd Inv M=2
+
+*simulation
+.tran 0.1ns 18ns
+
+.end
