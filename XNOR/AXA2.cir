@@ -1,5 +1,5 @@
 *circuit - AXA2
-.subckt AXA2 a b cin sum cout vdd
+.subckt AXA2 a b cin sum cout vdd gnd
 *PMOS
     Mp1 vdd a sc1 a pmos_nvt l=len nfins=n
     Mp2 sc1 b sum b pmos_nvt l=len nfins=n
