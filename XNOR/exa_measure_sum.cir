@@ -21,7 +21,7 @@ Vvdd1 vdd1 gnd vdd
 Vvdd2 vdd2 gnd vdd
 *Vboost boost gnd 0.9V
 Va a_in gnd PWL('0*m' 0 '5*m' 0 '5.1*m' vdd '7*m' vdd '7.1*m' 0 '10*m' 0 '10.1*m' vdd '13*m' vdd '13.1*m' 0 '16*m' 0 '16.1*m' vdd '18*m' vdd '18.1*m' 0 '19*m' 0 '19.1*m' vdd '24*m' vdd '24.1*m' 0)
-Vb b_in gnd PWL('0*m' 0 '3*m' 0 '3.1*m' vdd '4*m' vdd '4.1*m' 0 '8*m' 0 '8.1*m' vdd '9*m' vdd '9.1*m' 0 '12*m' 0 '12.1*m' vdd '10*m' vdd '10.1*m' 0 '21*m' 0 '21.1*m' vdd '23*m' vdd '23.1*m' 0)
+Vb b_in gnd PWL('0*m' 0 '3*m' 0 '3.1*m' vdd '4*m' vdd '4.1*m' 0 '8*m' 0 '8.1*m' vdd '9*m' vdd '9.1*m' 0 '12*m' 0 '12.1*m' vdd '20*m' vdd '20.1*m' 0 '21*m' 0 '21.1*m' vdd '23*m' vdd '23.1*m' 0)
 Vcin c_in gnd PWL('0*m' 0 '1*m' 0 '1.1*m' vdd '2*m' vdd '2.1*m' 0 '6*m' 0 '6.1*m' vdd '11*m' vdd '11.1*m' 0 '14*m' 0 '14.1*m' vdd '15*m' vdd '15.1*m' 0 '17*m' 0 '17.1*m' vdd '22*m' vdd '22.1*m' 0)
 
 .include INVERTER.cir
