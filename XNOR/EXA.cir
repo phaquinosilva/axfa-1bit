@@ -2,15 +2,15 @@
 .subckt EXA a b cin sum cout vdd gnd
 *DUT
     *PMOS
-        Mp1 vdd a sc1 a pmos_nvt l=len nfins=n
-        Mp2 sc1 b tmp b pmos_nvt l=len nfins=n
-        Mp3 vdd cin sc2 cin pmos_nvt l=len nfins=n
-        Mp4 sc2 tmp sum tmp pmos_nvt l=len nfins=n
-        Mp5 cin tmp cout tmp pmos_nvt l=len nfins=n
+        Mp1 vdd a sc1 a pmos_rvt l=len nfins=n
+        Mp2 sc1 b tmp b pmos_rvt l=len nfins=n
+        Mp3 vdd cin sc2 cin pmos_rvt l=len nfins=n
+        Mp4 sc2 tmp sum tmp pmos_rvt l=len nfins=n
+        Mp5 cin tmp cout tmp pmos_rvt l=len nfins=n
     *NMOS
-        Mn1 tmp a b a nmos_nvt l=len nfins=n
-        Mn2 tmp b a b nmos_nvt l=len nfins=n
-        Mn3 sum cin tmp cin nmos_nvt l=len nfins=n
-        Mn4 sum tmp cin tmp nmos_nvt l=len nfins=n
-        Mn5 a tmp cout tmp nmos_nvt l=len nfins=n
+        Mn1 tmp a b a nmos_rvt l=len nfins=n
+        Mn2 tmp b a b nmos_rvt l=len nfins=n
+        Mn3 sum cin tmp cin nmos_rvt l=len nfins=n
+        Mn4 sum tmp cin tmp nmos_rvt l=len nfins=n
+        Mn5 a tmp cout tmp nmos_rvt l=len nfins=n
 .ends

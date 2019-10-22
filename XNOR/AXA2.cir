@@ -1,11 +1,11 @@
 *circuit - AXA2
 .subckt AXA2 a b cin sum cout vdd gnd
 *PMOS
-    Mp1 vdd a sc1 a pmos_nvt l=len nfins=n
-    Mp2 sc1 b sum b pmos_nvt l=len nfins=n
-    Mp3 cin sum cout sum pmos_nvt l=len nfins=n
+    Mp1 vdd a sc1 a pmos_rvt l=len nfins=n
+    Mp2 sc1 b sum b pmos_rvt l=len nfins=n
+    Mp3 cin sum cout sum pmos_rvt l=len nfins=n
 *NMOS
-    Mn1 sum b a b nmos_nvt l=len nfins=n
-    Mn2 sum a b a nmos_nvt l=len nfins=n
-    Mn3 a sum cout sum nmos_nvt l=len nfins=n
+    Mn1 sum b a b nmos_rvt l=len nfins=n
+    Mn2 sum a b a nmos_rvt l=len nfins=n
+    Mn3 a sum cout sum nmos_rvt l=len nfins=n
 .ends
