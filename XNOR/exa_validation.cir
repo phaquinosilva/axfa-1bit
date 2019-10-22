@@ -1,7 +1,7 @@
 *EXA validation
 
 *model
-.include 7nm_FF.cir
+.include 7nm_FF.pm
 
 *param
 .param vdd = 0.7V
