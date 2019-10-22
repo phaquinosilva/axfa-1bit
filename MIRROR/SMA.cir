@@ -20,6 +20,6 @@
         Mn7 se1 a se2 a nmos_rvt l=len nfin=n
         Mn8 se2 b gnd b nmos_rvt l=len nfin=n
     *inverter for output
-        Xsum su sum vdd gnd Inv
-        Xcout co cout vdd gnd Inv
+        Xsum su sum vdd Inv
+        Xcout co cout vdd Inv
 .ends
