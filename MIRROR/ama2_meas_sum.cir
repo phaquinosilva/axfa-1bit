@@ -10,9 +10,7 @@
 .param m = 1n
 .option post = 2
 *sets format to .csv file
-.option measform= 3
-*outputs all measures to one file
-.option measfile = 1
+.option measform = 3
 
 
 *sources

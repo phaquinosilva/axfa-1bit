@@ -7,12 +7,10 @@
 .param vdd = 0.7V
 .param len = 7nm
 .param n = 3
-.param m = 1ns
+.param m = 1n
 .option post = 2
 *sets format to .csv file
-.option measform= 3
-*outputs all measures to one file
-.option measfile = 1
+.option measform = 3
 
 
 *sources
@@ -62,6 +60,6 @@ Xinv11 cout_1 cout_2 vdd2 Inv M=2
 .measure tran e_out integ i(Vvdd2) from='0*m' to='12*m'
 
 *simulation
-.tran '0.1*m' '12*m
+.tran '0.1*m' '12*m'
 
 .end

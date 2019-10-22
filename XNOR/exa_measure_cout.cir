@@ -67,7 +67,7 @@ Xinv10 cout_1 cout_2 vdd2 Inv M=2
 .measure tran e_in integ i(Vvdd1) from=0n to='13*m'
 .measure tran e_fa integ i(Vvdut) from=0n to='13*m'
 .measure tran e_out integ i(Vvdd2) from=0n to='13*m'
-.measure tran e_boost integ i(Vboost) from=0n to='13*m'
+*.measure tran e_boost integ i(Vboost) from=0n to='13*m'
 
 *Simulação transiente
 .tran '0.1*m' '13*m'
