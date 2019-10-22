@@ -9,6 +9,8 @@ do
   hspice $i #! -o OUTPUT_DATA/${i%.*}.csv
 done
 
+mkdir OUTPUT_DATA
+
 echo "Moving results to OUTPUT_DATA"
 for i in $(find . -name "*.csv")
 do
@@ -16,4 +18,7 @@ do
 done
 
 echo "Done."
+
+git add OUTPUT_DATA
+
 echo
