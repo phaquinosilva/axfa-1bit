@@ -27,24 +27,24 @@ Vcin c_in gnd PWL('0*m' vdd '4*m' vdd '4.1*m' 0 '7*m' 0 '7.1*m' vdd '8*m' vdd '8
 .include MIRROR.cir
 
 *IN fanout
-Xinv1 a_in a_in1 vdd1 gnd Inv
-Xinv2 a_in1 a vdd1 gnd Inv
+Xinv1 a_in a_in1 vdd1 Inv
+Xinv2 a_in1 a vdd1 Inv
 
-Xinv3 b_in b_in1 vdd1 gnd Inv
-Xinv4 b_in1 b vdd1 gnd Inv
+Xinv3 b_in b_in1 vdd1 Inv
+Xinv4 b_in1 b vdd1 Inv
 
-Xinv5 c_in c_in1 vdd1 gnd Inv
-Xinv6 c_in1 cin vdd1 gnd Inv
+Xinv5 c_in c_in1 vdd1 Inv
+Xinv6 c_in1 cin vdd1 Inv
 
 *****************DUT******************
-XDUT a b cin sum cout vdut gnd MIR
+XDUT a b cin sum cout vdut MIR
 
 *OUT fanout
-Xinv8 sum sum_1 vdd2 gnd Inv M=2
-Xinv9 sum_1 sum_2 vdd2 gnd Inv M=2
+Xinv8 sum sum_1 vdd2 Inv M=2
+Xinv9 sum_1 sum_2 vdd2 Inv M=2
 
-Xinv10 cout cout_1 vdd2 gnd Inv M=2
-Xinv11 cout_1 cout_2 vdd2 gnd Inv M=2
+Xinv10 cout cout_1 vdd2 Inv M=2
+Xinv11 cout_1 cout_2 vdd2 Inv M=2
 
 *delay
 .measure tran tplh_0B1 trig v(B) val='0.5*vdd' rise=1 targ v(cout) val='0.5*vdd' rise=1

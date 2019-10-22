@@ -1,10 +1,10 @@
 *circuit AMA1
 
-.param vdd = 0.7V
-.param len = 7nm
-.param n = 3
-
-.subckt AMA1 a b cin sum cout vdd
+*.param vdd = 0.7V
+*.param len = 7nm
+*.param n = 3
+*
+.subckt AMA1 a b cin sum cout
 *DUT
     *PMOS
         Mp1 vdd b sc1 b pmos_rvt l=len nfins=n

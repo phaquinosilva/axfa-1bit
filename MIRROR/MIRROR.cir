@@ -1,10 +1,10 @@
 *circuit - MIRROR
 
-.param vdd = 0.7V
-.param len = 7nm
-.param n = 3
-
-.subckt MIR a b cin sum cout vdd gnd
+*.param vdd = 0.7V
+*.param len = 7nm
+*.param n = 3
+*
+.subckt MIR a b cin sum cout vdd
 *DUT
     *PMOS
         Mp1 vdd a t1 a pmos_rvt l=len nfins=n

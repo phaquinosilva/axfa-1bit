@@ -1,5 +1,5 @@
 *circuit - SMA
-.subckt SMA a b cin sum cout vdd gnd
+.subckt SMA a b cin sum cout vdd
 *DUT
     *PMOS
         Mp1 vdd b sc1 vdd pmos_rvt l=len nfins=n

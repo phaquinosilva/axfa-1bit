@@ -22,24 +22,24 @@ Vcin c_in gnd pulse(0 vdd 1n 0.1n 0.1n 1n 2.2n)
 .include AMA2.cir
 
 *IN fanout
-Xinv1 a_in a_in1 vdd1 gnd Inv
-Xinv2 a_in1 a vdd1 gnd Inv
+Xinv1 a_in a_in1 vdd1 Inv
+Xinv2 a_in1 a vdd1 Inv
 
-Xinv3 b_in b_in1 vdd1 gnd Inv
-Xinv4 b_in1 b vdd1 gnd Inv
+Xinv3 b_in b_in1 vdd1 Inv
+Xinv4 b_in1 b vdd1 Inv
 
-Xinv5 c_in c_in1 vdd1 gnd Inv
-Xinv6 c_in1 cin vdd1 gnd Inv
+Xinv5 c_in c_in1 vdd1 Inv
+Xinv6 c_in1 cin vdd1 Inv
 
 *****************DUT******************
-XDUT a b cin sum cout vdut gnd AMA2
+XDUT a b cin sum cout vdut AMA2
 
 *OUT fanout
-Xinv8 sum sum_1 vdd2 gnd Inv M=2
-Xinv9 sum_1 sum_2 vdd2 gnd Inv M=2
+Xinv8 sum sum_1 vdd2 Inv M=2
+Xinv9 sum_1 sum_2 vdd2 Inv M=2
 
-Xinv10 cout cout_1 vdd2 gnd Inv M=2
-Xinv11 cout_1 cout_2 vdd2 gnd Inv M=2
+Xinv10 cout cout_1 vdd2 Inv M=2
+Xinv11 cout_1 cout_2 vdd2 Inv M=2
 
 *simulation
 .tran 0.1ns 18ns

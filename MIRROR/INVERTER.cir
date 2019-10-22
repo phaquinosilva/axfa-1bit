@@ -1,10 +1,10 @@
 *circuit - INVERTER
 
-.param vdd = 0.7V
-.param len = 7nm
-.param n = 3
-
-.subckt Inv in out vdd gnd
+*.param vdd = 0.7V
+*.param len = 7nm
+*.param n = 3
+*
+.subckt Inv in out vdd
 Mp vdd in out in pmos_rvt L=len nfins=n
 Mn out in gnd in nmos_rvt L=len nfins=n
 .ends
