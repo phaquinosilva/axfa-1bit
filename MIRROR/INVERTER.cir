@@ -4,7 +4,7 @@
 .param len = 7nm
 .param n = 3
 
-.subckt Inv in out vdd
+.subckt Inv in out vdd gnd
 Mp vdd in out in pmos_rvt L=len nfins=n
 Mn out in gnd in nmos_rvt L=len nfins=n
 .ends

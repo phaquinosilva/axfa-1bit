@@ -8,11 +8,11 @@
 .subckt AMA2 a b cin sum cout vdd gnd
 *DUT
     *PMOS
-        Mp1 vdd a co a pmos_rvt l=len nfins=m
-        Mp2 vdd a sc1 a pmos_rvt l=len nfins=m
-        Mp3 vdd b sc1 b pmos_rvt l=len nfins=m
-        Mp4 sc1 co su co pmos_rvt l=len nfins=m
-        Mp5 vdd cin su cin pmos_rvt l=len nfins=m
+        Mp1 vdd a co a pmos_rvt l=len nfins=n
+        Mp2 vdd a sc1 a pmos_rvt l=len nfins=n
+        Mp3 vdd b sc1 b pmos_rvt l=len nfins=n
+        Mp4 sc1 co su co pmos_rvt l=len nfins=n
+        Mp5 vdd cin su cin pmos_rvt l=len nfins=n
     *NMOS
         Mn1 co a gnd a nmos_rvt l=len nfins=n
         Mn2 su co sc2 co nmos_rvt l=len nfins=n

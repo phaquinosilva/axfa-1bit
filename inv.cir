@@ -1,0 +1,24 @@
+*AMA1 test SUM
+
+*model
+.include 7nm_FF.pm
+
+*param
+.param vdd = 0.7V
+.param len = 7nm
+.param n = 3
+.option post = 2
+*sets format to .csv file
+.option measform = 3
+
+*source
+Vvdd vdd gnd vdd
+Vcin c_in gnd pulse(0 vdd 1n 0.1n 0.1n 1n 2.2n)
+
+*circuit
+Mp vdd in out in pmos_rvt L=len nfins=n
+Mn out in gnd in nmos_rvt L=len nfins=n
+
+.tran 0.1ns 5ns
+
+.end

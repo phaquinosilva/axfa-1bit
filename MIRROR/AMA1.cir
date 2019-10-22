@@ -7,7 +7,7 @@
 .subckt AMA1 a b cin sum cout vdd
 *DUT
     *PMOS
-        Mp1 vdd b sc1 b pmos_rvt l=len nfins=3
+        Mp1 vdd b sc1 b pmos_rvt l=len nfins=n
         Mp2 sc1 cin co cin pmos_rvt l=len nfins=n
         Mp3 vdd b sc2 b pmos_rvt l=len nfins=n
         Mp4 sc2 a co a pmos_rvt l=len nfins=n
