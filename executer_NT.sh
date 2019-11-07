@@ -1,6 +1,5 @@
 #! /bin/bash
 
-echo
 echo "Simulation executer for near-threshold results"
 for i in $(find . -name "*meas*")
 do
