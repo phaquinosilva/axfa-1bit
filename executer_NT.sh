@@ -9,7 +9,7 @@ do
   for j in {1..10} do
     if ["$VOLT" -lt "2"] then break fi                      # sai do loop caso a tensão seja menor que 0.2V
     NEXT_VOLT=$((VOLT - 1))                                 # define tensão para a nova simulação
-    sed 's/vdd = '0."$VOLT"'V/vdd = '0."$NEXT_VOLT"'V'      # substitui a tensão antiga pela nova
+    sed 's/vdd = 0.'"$VOLT"'V/vdd = 0.'"$NEXT_VOLT"'V'      # substitui a tensão antiga pela nova
     VOLT=NEXT_VOLT                                          # define tensão atual como a nova tensão
     hspice ${i%.*}.cir                                      # roda simulação
     if [grep -q failed ${i%.*}.csv != 0] then
