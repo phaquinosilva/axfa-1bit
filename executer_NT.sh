@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "Simulation executer for near-threshold results"
-for i in $(find . -name "*meas*")
+for i in $(find . -name "*meas*.cir")
 do
   echo "Simulating: $i"
   INTERVAL=1
@@ -21,7 +21,7 @@ do
       sed 's/m = '"$INTERVAL"'n/m = '"$NEXT_INTERVAL"'n'    # substitui o período antigo pelo novo
       INTERVAL=$NEXT_INTERVAL;                               # define o intervalo atual como o novo intervalo
     else
-      mv ${i%.*}.csv ${i%.*.*}"0."${VOLT}.csv               # renomeia o arquivo para a tensão correta
+      mv ${i%.*.*}.mt0.csv ${i%.*.*}"0."${VOLT}.csv               # renomeia o arquivo para a tensão correta
       echo "End of simulation in 0.${VOLT}V"                # simulado em qual tensão
       break                                                 # sai do loop do arquivo e simula o próximo arquivo
     fi
@@ -37,9 +37,9 @@ do
 done
 
 
-echo "Adding results to AC Simulations respository in GitLab"
-git add OUTPUT_DATA/NT
-git commit -m "near-threshold results"
-git push
+# echo "Adding results to AC Simulations respository in GitLab"
+# git add OUTPUT_DATA/NT
+# git commit -m "near-threshold results"
+# git push
 
 echo "Simulations done."
