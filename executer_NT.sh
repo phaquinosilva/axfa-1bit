@@ -16,8 +16,7 @@ do
     fi
     perl -i.bak -p -e "s/\bvdd = 0."$VOLT"V\b/vdd = 0."$((VOLT - 1))"V/" $i
     VOLT=$((VOLT-1))                                          # define tensão atual como a nova tensão
-    # hspice $i                                               # roda simulação
-    touch $y.mt0.csv
+    hspice $i                                               # roda simulação
     if grep -q failed "${y##*/}.mt0.csv"; then
       perl -i.bak -p -e "s/\bm = "$INTERVAL"n\b/m = "$((INTERVAL + 1))"n/" $i
       INTERVAL=$((INTERVAL + 1));                               # define o intervalo atual como o novo intervalo
