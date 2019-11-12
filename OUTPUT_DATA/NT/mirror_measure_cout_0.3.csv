@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='H-2013.03-SP1 32-BIT'
+$OPTION MEASFORM=3
+.TITLE '*mirror test cout'
+tplh_0b1,tphl_0b1,tplh_a01,tphl_a01,tplh_01c,tphl_01c,tplh_a10,tphl_a10,tplh_1b0,tphl_1b0,tplh_10c,tphl_10c,e_in,e_fa,e_out,temper,alter#
+7.173e-11, 8.725e-11, 7.388e-11, 8.654e-11, 6.301e-11, 7.754e-11, 7.068e-11, 8.563e-11, 7.174e-11, 8.488e-11, 6.460e-11, 7.762e-11,-2.063e-15,-4.575e-15,-3.361e-15,  25.0000,1

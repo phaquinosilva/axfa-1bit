@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='H-2013.03-SP1 32-BIT'
+$OPTION MEASFORM=3
+.TITLE '*ama1 test cout'
+tplh_0b0,tplh_0b1,tplh_a01,tplh_1b0,tplh_10c,tphl_0b0,tphl_0b1,tphl_10c,tphl_1b0,tphl_a01,e_in,e_fa,e_out,temper,alter#
+4.301e-11, 4.191e-11, 5.961e-11, 3.984e-11, 5.511e-11, 5.668e-11, 8.107e-11, 7.410e-11, 8.235e-11, 7.869e-11,-1.366e-15,-3.420e-15,-2.884e-15,  25.0000,1
