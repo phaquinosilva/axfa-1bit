@@ -2,6 +2,7 @@
 PATH="$PATH":/home/user/bin
 
 echo "Simulation executer for near-threshold results"
+touch sim_times
 for i in $(find . -name "*meas*.cir")
 do
   y=${i%.*}
@@ -15,7 +16,7 @@ do
         break                                                 # sai do loop caso a tensão seja menor que 0.2V
     fi
     perl -i.bak -p -e "s/\bvdd = 0."$VOLT"V\b/vdd = 0."$((VOLT - 1))"V/" $i
-    VOLT=$((VOLT-1))                                          # define tensão atual como a nova tensão
+    VOLT=$((VOLT - 1))                                          # define tensão atual como a nova tensão
     hspice $i                                               # roda simulação
     if grep -q failed "${y##*/}.mt0.csv"; then
       perl -i.bak -p -e "s/\bm = "$INTERVAL"n\b/m = "$((INTERVAL + 1))"n/" $i
@@ -23,6 +24,9 @@ do
     else
       mv $y.mt0.csv $y"_0."$VOLT"".csv               # renomeia o arquivo para a tensão correta
       echo "End of simulation in 0.${VOLT}V"                # simulado em qual tensão
+      echo "Circuit: $i" >> sim_times
+      echo "→ voltage: 0."$VOLT"" >> sim_times
+      echo "→ interval: "$INTERVAL"" >> sim_times
       continue                                                 # sai do loop do arquivo e simula o próximo arquivo
     fi
   done
