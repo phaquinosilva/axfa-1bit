@@ -27,6 +27,7 @@ do
       echo "Circuit: $i" >> sim_times
       echo "→ voltage: 0."$VOLT"" >> sim_times
       echo "→ interval: "$INTERVAL"" >> sim_times
+      echo >> sim_times
       continue                                                 # sai do loop do arquivo e simula o próximo arquivo
     fi
   done
