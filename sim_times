@@ -1,0 +1,305 @@
+Circuit: ./XNOR/exa_measure_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./XNOR/exa_measure_cout.cir
+
+Circuit: ./XNOR/exa_measure_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./XNOR/exa_measure_cout.cir
+
+Circuit: ./XNOR/exa_measure_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./XNOR/exa_measure_cout.cir
+
+Circuit: ./XNOR/exa_measure_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./XNOR/exa_measure_cout.cir
+
+Circuit: ./XNOR/axa2_meas_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_cout.cir
+
+Circuit: ./XNOR/axa2_meas_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_cout.cir
+
+Circuit: ./XNOR/axa2_meas_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_cout.cir
+
+Circuit: ./XNOR/axa2_meas_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_cout.cir
+
+Circuit: ./XNOR/exa_measure_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./XNOR/exa_measure_sum.cir
+
+Circuit: ./XNOR/exa_measure_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./XNOR/exa_measure_sum.cir
+
+Circuit: ./XNOR/exa_measure_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./XNOR/exa_measure_sum.cir
+
+Circuit: ./XNOR/exa_measure_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./XNOR/exa_measure_sum.cir
+
+Circuit: ./XNOR/axa3_meas_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_sum.cir
+
+Circuit: ./XNOR/axa3_meas_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_sum.cir
+
+Circuit: ./XNOR/axa3_meas_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_sum.cir
+
+Circuit: ./XNOR/axa3_meas_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_sum.cir
+
+Circuit: ./XNOR/axa3_meas_sum.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_sum.cir
+
+Circuit: ./XNOR/axa2_meas_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_sum.cir
+
+Circuit: ./XNOR/axa2_meas_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_sum.cir
+
+Circuit: ./XNOR/axa2_meas_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_sum.cir
+
+Circuit: ./XNOR/axa2_meas_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_sum.cir
+
+Circuit: ./XNOR/axa2_meas_sum.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./XNOR/axa2_meas_sum.cir
+
+Circuit: ./XNOR/axa3_meas_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_cout.cir
+
+Circuit: ./XNOR/axa3_meas_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_cout.cir
+
+Circuit: ./XNOR/axa3_meas_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_cout.cir
+
+Circuit: ./XNOR/axa3_meas_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./XNOR/axa3_meas_cout.cir
+
+Circuit: ./MIRROR/mirror_measure_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_cout.cir
+
+Circuit: ./MIRROR/mirror_measure_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_cout.cir
+
+Circuit: ./MIRROR/mirror_measure_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_cout.cir
+
+Circuit: ./MIRROR/mirror_measure_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_cout.cir
+
+Circuit: ./MIRROR/ama2_meas_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_cout.cir
+
+Circuit: ./MIRROR/ama2_meas_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_cout.cir
+
+Circuit: ./MIRROR/ama2_meas_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_cout.cir
+
+Circuit: ./MIRROR/ama2_meas_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_cout.cir
+
+Circuit: ./MIRROR/ama2_meas_cout.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_cout.cir
+
+Circuit: ./MIRROR/sma_meas_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_sum.cir
+
+Circuit: ./MIRROR/sma_meas_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_sum.cir
+
+Circuit: ./MIRROR/sma_meas_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_sum.cir
+
+Circuit: ./MIRROR/sma_meas_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_sum.cir
+
+Circuit: ./MIRROR/ama1_meas_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_cout.cir
+
+Circuit: ./MIRROR/ama1_meas_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_cout.cir
+
+Circuit: ./MIRROR/ama1_meas_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_cout.cir
+
+Circuit: ./MIRROR/ama1_meas_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_cout.cir
+
+Circuit: ./MIRROR/ama1_meas_cout.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_cout.cir
+
+Circuit: ./MIRROR/mirror_measure_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_sum.cir
+
+Circuit: ./MIRROR/mirror_measure_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_sum.cir
+
+Circuit: ./MIRROR/mirror_measure_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_sum.cir
+
+Circuit: ./MIRROR/mirror_measure_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/mirror_measure_sum.cir
+
+Circuit: ./MIRROR/sma_meas_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_cout.cir
+
+Circuit: ./MIRROR/sma_meas_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_cout.cir
+
+Circuit: ./MIRROR/sma_meas_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_cout.cir
+
+Circuit: ./MIRROR/sma_meas_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/sma_meas_cout.cir
+
+Circuit: ./MIRROR/ama2_meas_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_sum.cir
+
+Circuit: ./MIRROR/ama2_meas_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_sum.cir
+
+Circuit: ./MIRROR/ama2_meas_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_sum.cir
+
+Circuit: ./MIRROR/ama2_meas_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_sum.cir
+
+Circuit: ./MIRROR/ama2_meas_sum.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./MIRROR/ama2_meas_sum.cir
+
+Circuit: ./MIRROR/ama1_meas_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_sum.cir
+
+Circuit: ./MIRROR/ama1_meas_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_sum.cir
+
+Circuit: ./MIRROR/ama1_meas_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_sum.cir
+
+Circuit: ./MIRROR/ama1_meas_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./MIRROR/ama1_meas_sum.cir
+

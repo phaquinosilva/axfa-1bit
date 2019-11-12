@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='H-2013.03-SP1 32-BIT'
+$OPTION MEASFORM=3
+.TITLE '*mirror test sum'
+tplh_00c,tphl_00c,tplh_0b0,tphl_0b0,tplh_a00,tphl_a00,tplh_0b1,tphl_0b1,tplh_01c,tphl_01c,tplh_a11,tphl_a11,tplh_a01,tphl_a01,tplh_10c,tphl_10c,tplh_1b1,tphl_1b1,tplh_a10,tphl_a10,tplh_1b0,tphl_1b0,tplh_11c,tphl_11c,e_in,e_fa,e_out,temper,alter#
+8.881e-10,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,-9.289e-16,-3.803e-16,-5.333e-16,  25.0000,1
