@@ -4,7 +4,7 @@
 .include 7nm_FF.pm
 
 *param
-.param vdd = 0.1V
+.param vdd = 0.2V
 .param len = 7nm
 .param n = 3
 .param m = 1n

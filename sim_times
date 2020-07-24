@@ -303,3 +303,63 @@ Circuit: ./MIRROR/ama1_meas_sum.cir
 â  interval: 1
     grep tran ./MIRROR/ama1_meas_sum.cir
 
+Circuit: ./buffer_cout.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+â  voltage: 0.1
+â  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_sum.cir
+â  voltage: 0.6
+â  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+â  voltage: 0.5
+â  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+â  voltage: 0.4
+â  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+â  voltage: 0.3
+â  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+â  voltage: 0.2
+â  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+â  voltage: 0.1
+â  interval: 1
+    grep tran ./buffer_sum.cir
+

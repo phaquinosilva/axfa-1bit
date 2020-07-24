@@ -7,7 +7,7 @@
 .param vdd = 0.1V
 .param len = 7nm
 .param n = 3
-.param m = 2n
+.param m = 1n
 .option post = 2
 *sets format to .csv file
 .option measform= 3

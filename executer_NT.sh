@@ -3,7 +3,7 @@ PATH="$PATH":/home/user/bin
 
 echo "Simulation executer for near-threshold results"
 touch sim_times
-for i in $(find . -name "*meas*.cir")
+for i in $(find . -name "buffer*.cir")
 do
   y=${i%.*}
   y=${y##*/}
@@ -25,8 +25,9 @@ do
       mv $y.mt0.csv $y"_0."$VOLT"".csv               # renomeia o arquivo para a tensão correta
       echo "End of simulation in 0.${VOLT}V"                # simulado em qual tensão
       echo "Circuit: $i" >> sim_times
-      echo "→ voltage: 0."$VOLT"" >> sim_times
-      echo "→ interval: "$INTERVAL"" >> sim_times
+      echo "�  voltage: 0."$VOLT"" >> sim_times
+      echo "�  interval: "$INTERVAL"" >> sim_times
+      echo "   " grep tran $i >> sim_times
       echo >> sim_times
       continue                                                 # sai do loop do arquivo e simula o próximo arquivo
     fi
@@ -35,7 +36,7 @@ done
 
 echo "Moving results to OUTPUT_DATA"
 mkdir OUTPUT_DATA/NT
-for i in $(find . -name "*.csv");
+for i in $(find . -name "buffer*.csv");
 do
   mv $i OUTPUT_DATA/NT
 done
