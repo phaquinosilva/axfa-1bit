@@ -7,7 +7,7 @@
 .param vdd = 0.1V
 .param len = 7nm
 .param n = 3
-.param m = 1n
+.param m = 2n
 .option post = 2
 *sets format to .csv file
 .option measform= 3
@@ -32,25 +32,25 @@ Vcin c_in gnd PWL('0*m' 0 '3.0*m' 0 '3.1*m' vdd '6.0*m' vdd '6.1*m' 0 '9.0*m' 0 
 .ends
 
 *load
-Xinv1 a_in a_in1 vdd1 Inv
-Xinv2 a_in1 a vdd1 Inv
+Xinv1 a_in a_in1 vdd1 gnd Inv
+Xinv2 a_in1 a vdd1 gnd Inv
 
-Xinv3 b_in b_in1 vdd1 Inv
-Xinv4 b_in1 b vdd1 Inv
+Xinv3 b_in b_in1 vdd1 gnd Inv
+Xinv4 b_in1 b vdd1 gnd Inv
 
-Xinv5 c_in c_in1 vdd1 Inv
-Xinv6 c_in1 cin vdd1 Inv
+Xinv5 c_in c_in1 vdd1 gnd Inv
+Xinv6 c_in1 cin vdd1 gnd Inv
 
 *****************DUT******************
 XDUT0 a sum_2 vdut gnd Buf
 XDUT1 b cout_2 vdut gnd Buf
 
 *Fanout
-Xinv8 sum_2 sum_1 vdd2 Inv M=2
-Xinv9 sum_1 sum vdd2 Inv M=2
+Xinv8 sum_2 sum_1 vdd2 gnd Inv M=2
+Xinv9 sum_1 sum vdd2 gnd Inv M=2
 
-Xinv10 cout_2 cout_1 vdd2 Inv M=2
-Xinv11 cout_1 cout vdd2 Inv M=2
+Xinv10 cout_2 cout_1 vdd2 gnd Inv M=2
+Xinv11 cout_1 cout vdd2 gnd Inv M=2
 
 *delay
 .measure tran tplh_0B0 trig v(B) val='0.5*vdd' rise=1 targ v(cout) val='0.5*vdd' rise=1

@@ -1,0 +1,33 @@
+* "simulator" "HSPICE" 
+* "version" "H-2013.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "20:06:37 07/24/2020 "
+* "netlist" "./buffer_sum.cir "
+* "runtitle" "*ama1 validation"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a = 489.2983u       
++ a_in =   0.            
++ a_in1 =  94.2895m       
++ b = 489.2983u       
++ b_in =   0.            
++ b_in1 =  94.2895m       
++ c_in =   0.            
++ c_in1 =  94.2895m       
++ cin = 489.2748u       
++ cout = 495.8529u       
++ cout_1 =  94.0876m       
++ cout_2 = 495.8118u       
++ sum = 495.8529u       
++ sum_1 =  94.0876m       
++ sum_2 = 495.8118u       
++ vdd1 = 100.0000m       
++ vdd2 = 100.0000m       
++ vdut = 100.0000m       
++ xdut0.o =  94.0903m       
++ xdut1.o =  94.0903m       
+***   END: Saved Operating Point ***                     
