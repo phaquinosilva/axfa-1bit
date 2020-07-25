@@ -15,12 +15,15 @@ do
         echo
         break                                                 # sai do loop caso a tensão seja menor que 0.2V
     fi
-    perl -i.bak -p -e "s/\bvdd = 0."$VOLT"V\b/vdd = 0."$((VOLT - 1))"V/" $i
-    VOLT=$((VOLT - 1))                                          # define tensão atual como a nova tensão
+    if [$VOLT -ne 7]; then
+	 perl -i.bak -p -e "s/\bvdd = 0."$VOLT"V\b/vdd = 0."$((VOLT - 1))"V/" $i
+    fi
     hspice $i                                               # roda simulação
     if grep -q failed "${y##*/}.mt0.csv"; then
       perl -i.bak -p -e "s/\bm = "$INTERVAL"n\b/m = "$((INTERVAL + 1))"n/" $i
       INTERVAL=$((INTERVAL + 1));                               # define o intervalo atual como o novo intervalo
+      VOLT=$((VOLT - 1))                                          # define tensão atual como a nova tensão
+      continue
     else
       mv $y.mt0.csv $y"_0."$VOLT"".csv               # renomeia o arquivo para a tensão correta
       echo "End of simulation in 0.${VOLT}V"                # simulado em qual tensão
@@ -29,6 +32,7 @@ do
       echo "→  interval: "$INTERVAL"" >> sim_times
       echo "   " grep tran $i >> sim_times
       echo >> sim_times
+      VOLT=$((VOLT - 1))                                          # define tensão atual como a nova tensão
       continue                                                 # sai do loop do arquivo e simula o próximo arquivo
     fi
   done
