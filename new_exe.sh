@@ -9,14 +9,14 @@ do
   y=${y##*/}
   echo "Simulating: $y"
   INTERVAL=1
-  VOLT=7
+  VOLT=8
   for j in {1..10}; do
     if [ $VOLT -lt 2 ]; then
         echo
         break                                                 # sai do loop caso a tensão seja menor que 0.2V
     fi
     perl -i.bak -p -e "s/\bvdd = 0."$VOLT"V\b/vdd = 0."$((VOLT - 1))"V/" $i
-    VOLT = $((VOLT - 1)) 
+    VOLT=$((VOLT - 1))                                          # define tensão atual como a nova tensão
     hspice $i                                               # roda simulação
     if grep -q failed "${y##*/}.mt0.csv"; then
       perl -i.bak -p -e "s/\bm = "$INTERVAL"n\b/m = "$((INTERVAL + 1))"n/" $i
@@ -47,3 +47,4 @@ done
 # git push
 
 echo "Simulations done."
+

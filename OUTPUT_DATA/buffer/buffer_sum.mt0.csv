@@ -2,4 +2,4 @@ $DATA1 SOURCE='HSPICE' VERSION='H-2013.03-SP1 32-BIT'
 $OPTION MEASFORM=3
 .TITLE '*ama1 validation'
 tplh_a00,tplh_a01,tplh_a10,tplh_a11,tphl_a00,tphl_a01,tphl_a10,tphl_a11,e_in,e_fa,e_out,temper,alter#
-6.425e-10, 6.391e-10, 6.408e-10, 6.435e-10, 5.965e-10, 5.981e-10, 5.966e-10, 5.943e-10,-8.374e-16,-9.001e-16,-8.718e-16,  25.0000,1
+failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,-2.159e-16,-5.826e-17,-8.702e-17,  25.0000,1

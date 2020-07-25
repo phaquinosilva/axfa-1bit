@@ -903,3 +903,423 @@ Circuit: ./buffer_sum.cir
 →  interval: 1
     grep tran ./buffer_sum.cir
 
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.6
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.5
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.4
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.3
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.2
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.6
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.5
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.4
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.3
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.2
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.8
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.6
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.5
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.4
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.3
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_cout.cir
+→  voltage: 0.2
+→  interval: 1
+    grep tran ./buffer_cout.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.7
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.6
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.5
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.4
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.3
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
+Circuit: ./buffer_sum.cir
+→  voltage: 0.2
+→  interval: 1
+    grep tran ./buffer_sum.cir
+
