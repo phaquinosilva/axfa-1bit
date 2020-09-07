@@ -1,0 +1,73 @@
+*AMA1 validation
+
+*model
+.include 7nm_FF.pm
+
+*param
+.param vdd = 0.1V
+.param len = 7nm
+.param n = 3
+.param m = 2n
+.option post = 2
+*sets format to .csv file
+.option measform= 3
+
+*sources
+Vvdut vdut gnd vdd
+Vvdd1 vdd1 gnd vdd
+Vvdd2 vdd2 gnd vdd
+*sources validation
+Va a_in gnd PWL('0*m' 0 '1.0*m' 0 '1.1*m' vdd '2.0*m' vdd '2.1*m' 0 '4.0*m' 0 '4.1*m' vdd '5.0*m' vdd '5.1*m' 0 '7.0*m' 0 '7.1*m' vdd '8.0*m' vdd '8.1*m' 0 '10.0*m' 0 '10.1*m' vdd '11.0*m' vdd '11.1*m' 0)
+Vb b_in gnd PWL('0*m' 0 '6.0*m' 0 '6.1*m' vdd)
+Vcin c_in gnd PWL('0*m' 0 '3.0*m' 0 '3.1*m' vdd '6.0*m' vdd '6.1*m' 0 '9.0*m' 0 '9.1*m' vdd)
+
+.subckt Inv in out vdd gnd
+  Mp vdd in out in pmos_rvt L=len nfin=n
+  Mn out in gnd in nmos_rvt L=len nfin=n
+.ends
+
+.subckt Buf in out vdd gnd
+  Xinva in o vdd gnd Inv
+  Xinvb o out vdd gnd Inv
+.ends
+
+*load
+Xinv1 a_in a_in1 vdd1 gnd Inv
+Xinv2 a_in1 a vdd1 gnd Inv
+
+Xinv3 b_in b_in1 vdd1 gnd Inv
+Xinv4 b_in1 b vdd1 gnd Inv
+
+Xinv5 c_in c_in1 vdd1 gnd Inv
+Xinv6 c_in1 cin vdd1 gnd Inv
+
+*****************DUT******************
+XDUT0 a sum_2 vdut gnd Buf
+XDUT1 b cout_2 vdut gnd Buf
+
+*Fanout
+Xinv8 sum_2 sum_1 vdd2 gnd Inv M=2
+Xinv9 sum_1 sum vdd2 gnd Inv M=2
+
+Xinv10 cout_2 cout_1 vdd2 gnd Inv M=2
+Xinv11 cout_1 cout vdd2 gnd Inv M=2
+
+*delay
+.measure tran tplh_A00 trig v(A) val='0.5*vdd' rise=1 targ v(sum) val='0.5*vdd' rise=1
+.measure tran tplh_A01 trig v(A) val='0.5*vdd' rise=2 targ v(sum) val='0.5*vdd' rise=2
+.measure tran tplh_A10 trig v(A) val='0.5*vdd' rise=3 targ v(sum) val='0.5*vdd' rise=3
+.measure tran tplh_A11 trig v(A) val='0.5*vdd' rise=4 targ v(sum) val='0.5*vdd' rise=4
+.measure tran tphl_A00 trig v(A) val='0.5*vdd' fall=1 targ v(sum) val='0.5*vdd' fall=1
+.measure tran tphl_A01 trig v(A) val='0.5*vdd' fall=2 targ v(sum) val='0.5*vdd' fall=2
+.measure tran tphl_A10 trig v(A) val='0.5*vdd' fall=3 targ v(sum) val='0.5*vdd' fall=3
+.measure tran tphl_A11 trig v(A) val='0.5*vdd' fall=4 targ v(sum) val='0.5*vdd' fall=4
+
+*energy
+.measure tran e_in integ i(Vvdd1) from='0*m' to='12.0*m'
+.measure tran e_fa integ i(Vvdut) from='0*m' to='12.0*m'
+.measure tran e_out integ i(Vvdd2) from='0*m' to='12.0*m'
+
+*simulation
+.tran '0.1*m' '12.0*m'
+
+.end
