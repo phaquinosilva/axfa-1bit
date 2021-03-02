@@ -1,5 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='H-2013.03-SP1 32-BIT'
-$OPTION MEASFORM=3
-.TITLE '*ama2 test sum'
-tplh_00c,tplh_1b1,tplh_11c,tplh_a01,tplh_01c,tphl_a01,tphl_11c,tphl_1b1,tphl_00c,tphl_01c,e_in,e_fa,e_out,temper,alter#
-failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,   failed,-2.500e-16,-7.558e-17,-8.312e-17,  25.0000,1

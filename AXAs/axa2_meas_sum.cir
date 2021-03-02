@@ -4,10 +4,9 @@
 .include 7nm_FF.pm
 
 *param
-.param vdd = 0.1V
-.param len = 7nm
+.param vdd = 0.7V
 .param n = 3
-.param m = 2n
+.param m = 1n
 .option post = 2
 *sets format to .csv file
 .option measform= 3
@@ -44,12 +43,8 @@ Xinv6 c_in1 cin vdd1 Inv
 XDUT a b cin sum cout vdut AXA2
 
 *OUT
-Xinv7 sum  sum_1 vdd2 Inv M=2
-Xinv8 sum_1  sum_2 vdd2 Inv M=2
-Xinv9 cout cout_1 vdd2 Inv M=2
-Xinv10 cout_1 cout_2 vdd2 Inv M=2
-
-*delay
+Csum sum gnd 10f
+Ccout cout gnd 10f
 .measure tran tphl_0B0 trig v(B) val='0.5*vdd' rise=1 targ v(sum) val='0.5*vdd' fall=1
 .measure tran tphl_A00 trig v(A) val='0.5*vdd' rise=1 targ v(sum) val='0.5*vdd' fall=2
 .measure tran tphl_A10 trig v(A) val='0.5*vdd' fall=1 targ v(sum) val='0.5*vdd' fall=3

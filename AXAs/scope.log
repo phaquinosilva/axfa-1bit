@@ -1,0 +1,24 @@
+Mdi:ArrangeIcons
+wm geometry . 1246x648+64+43
+ScopeSigMgr:loadpffile /home/pedro/axfa-1bit/AXAs/exa_test.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 226x337+680+209
+pf:read PF:1 v(cout)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph0
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.32614249534225 0.23835698187542} {1.1372n 1.5157n}}
+Graph axisconfig {AxisY(0,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(V)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{0.17858999967575 0.69830000400543} {0.0 4.9999999696126n}} -unitscale {{auto} {auto}}
+wm geometry .sigmgr._PF:1 226x337+668+148
+Mdi:ArrangeIcons
+wm geometry . 1246x648+74+47
+Mdi:ArrangeIcons
+wm geometry . 1246x648+63+45
+wm geometry .sigmgr._PF:1 226x337+580+135
+wm geometry .sigmgr 372x200+841+135
+Mdi:ArrangeIcons
+wm geometry . 1246x648+57+40
+ScopeSigMgr:Unload 0 {{(1) exa_test.tr0}}
+ScopeSigMgr:Unload 0 {{(1) exa_test.tr0}}

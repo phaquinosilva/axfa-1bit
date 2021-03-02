@@ -1,0 +1,45 @@
+*EXA sizing test
+
+*model
+.include 7nm_FF.pm
+
+*param
+.param vdd = 0.7V
+*.param len = 7nm
+.param n = 3
+.option post = 2
+
+*source
+Vvdut vdut gnd vdd
+Vvload vload gnd vdd
+Vboost boost gnd 0.9
+Va a_in gnd PWL(0n vdd)
+Vb b_in gnd PWL(0n vdd 1n vdd 1.1n 0)
+Vcin c_in gnd PWL(0n 0)
+
+.include INVERTER.cir
+.include EXA9.cir
+
+*IN
+Xinv1 a_in a_in1 vload Inv
+Xinv2 a_in1 a boost Inv
+
+Xinv3 b_in b_in1 vload Inv
+Xinv4 b_in1 b vload Inv
+
+Xinv5 c_in c_in1 vload Inv
+Xinv6 c_in1 cin vload Inv
+
+***************DUT******************
+XDUT a b cin sum cout vdut EXA
+
+*OUT
+Cload1 sum gnd 10f
+Cload2 cout gnd 10f
+
+.measure tran test_cout trig v(b) val='0.5*vdd' rise=1 targ v(cout) val='0.5*vdd' rise=1
+.measure tran test_sum trig v(b) val='0.5*vdd' rise=1 targ v(sum) val='0.5*vdd' fall=1
+
+.tran 0.1ns 5ns
+
+.end

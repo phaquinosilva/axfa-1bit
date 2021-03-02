@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='H-2013.03-SP1 32-BIT'
+$OPTION MEASFORM=3
+.TITLE '*axa2 test sum'
+tphl_0b0,tphl_a00,tphl_a10,tphl_1b0,tphl_0b1,tphl_a01,tphl_a11,tphl_1b1,tplh_0b0,tplh_1b0,tplh_a10,tplh_a00,tplh_0b1,tplh_1b1,tplh_a11,tplh_a01,e_in,e_fa,e_out,temper,alter#
+4.484e-11, 6.220e-11, 2.077e-11, 2.044e-11, 4.488e-11, 6.225e-11, 2.091e-11, 2.024e-11, 6.663e-11, 6.435e-11, 6.347e-11, 6.811e-11, 6.718e-11, 6.560e-11, 6.467e-11, 6.918e-11,-4.362e-14,-2.993e-14,   0.,  25.0000,1

@@ -5,7 +5,6 @@
 
 *param
 .param vdd = 0.7V
-.param len = 7nm
 .param n = 3
 .option post = 2
 
@@ -34,14 +33,7 @@ Xinv6 c_in1 cin vdd1 Inv
 *****************DUT******************
 XDUT a b cin sum cout vdut AMA1
 
-*OUT fanout
-Xinv8 sum sum_1 vdd2 Inv M=2
-Xinv9 sum_1 sum_2 vdd2 Inv M=2
-
-Xinv10 cout cout_1 vdd2 Inv M=2
-Xinv11 cout_1 cout_2 vdd2 Inv M=2
-
-*Simulação transiente
-.tran 0.1ns 18ns
+Csum sum gnd 10f
+Ccout cout gnd 10f
 
 .end
